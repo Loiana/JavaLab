@@ -8,7 +8,7 @@ package javalab;
  *
  * @author aluno
  */
-public class Funcionario {
+public class Funcionario implements Pagavel{
     private double salario; //este campo nao é nem visto em outras classes e nem herdado em subclasses.
     protected double salario2;//Funciona como um private, mas PODE ser utilizado na herança assim como em qualque classe deste mesmo pacote.
     double salario3; //nao escrever nada e como public, mas somente no mesmo pacote.
@@ -29,5 +29,10 @@ public class Funcionario {
       
     protected final void demitir3() {
    
+    }
+    
+    @Override
+    public double getValorASerPago() {
+        return salario;
     }
 }

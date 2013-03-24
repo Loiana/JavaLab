@@ -29,7 +29,8 @@ public class Vendedor extends Funcionario{
     protected void demitir2(){
         
     }
-    protected void demitir3(){
+    //protected void demitir3(){ 
+    //}
         
-    }
+  
 }

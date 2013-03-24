@@ -30,4 +30,18 @@ public class Armagedon { //extends java.lang.object //Toda classe erda isso impl
         this.guerreiros = guerreiros;
     }
     
+    public final int dobraGuerreiros(){
+        return guerreiros *2;
+    }
+    
+    @Override //indica que estou sobrescrevendo um método que já existe.
+    public Object clone(){
+        return new Armagedon();
+    }
+    
+    @Override //indica que estou sobrescrevendo um método que já existe.
+    public String toString(){
+        return "teste";
+    }
+    
 }
