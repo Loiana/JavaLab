@@ -29,6 +29,14 @@ public class TestaArmagedon {
         System.out.println(arm.getClass());
         
         Class c = arm.getClass(); //Reflexão
+        
+        int x = 2;
+        
+        switch (x) {
+            case Constantes.UM:
+                System.out.println("Optimus Prime");
+        
+        }
     }
     
 }
